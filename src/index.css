@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #e2d1b1;
+  --gold-dark: #c8b896;
+  --black: #0a0a0a;
+  --black-deep: #050505;
+  --white: #ffffff;
+  --gray: #888888;
+  --gray-dark: #444444;
+  --gray-light: #aaaaaa;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.brand-title {
+    text-align: center;
+    font-size: 50px;
+    margin: 60px 0;
+    letter-spacing: 8px;
+    color: #e2d1b1;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+}
